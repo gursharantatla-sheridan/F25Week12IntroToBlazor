@@ -1,0 +1,10 @@
+﻿@page "/databinding"
+@rendermode InteractiveServer
+
+<h3>Hello @name</h3>
+
+<input type="text" placeholder="Enter your name" @bind-value="name" @bind-value:event="oninput" />
+
+@code {
+    private string name = "";
+}
